@@ -365,10 +365,9 @@ html {
     background-size: auto 700px;
     background-position: center center;
     width: auto;
-
     height: 700px;
     padding-top: 30px;
-    padding-left: 970px;
+    /* padding-left: 970px; */
     display: flex;
     justify-content: flex-end;
     padding-right: 20px;
@@ -498,6 +497,11 @@ html {
     .portfolio-photo {
         margin-bottom: 15px;
     }
+
+}
+
+@media screen and (max-width: 990px) {
+    
 
 }
 
