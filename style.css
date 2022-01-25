@@ -364,7 +364,7 @@ html {
     background-repeat: no-repeat;
     background-size: auto 700px;
     background-position: center center;
-    width: auto;
+    /* width: auto; */
     height: 700px;
     padding-top: 30px;
     /* padding-left: 970px; */
