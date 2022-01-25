@@ -608,9 +608,9 @@ html {
     line-height: normal;
     }
 
-    .skills-container, .portfolio-container, .video-container, .price-container {
+    /* .skills-container, .portfolio-container, .video-container, .price-container {
         padding-top: 80px;
-    }
+    } */
     .skills-container {
         padding-bottom: 13px;
     }
