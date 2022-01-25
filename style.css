@@ -500,11 +500,6 @@ html {
 
 }
 
-@media screen and (max-width: 990px) {
-    
-
-}
-
 @media (max-width: 768px) {
 
     .container, .hero-container, .header-container, .contacts {
@@ -588,6 +583,10 @@ html {
         padding-bottom: 16px;
     }
 
+    .switch-lang {
+        margin-right: 20px;
+    }
+
   h1 {
     margin: 0;
     line-height: 64px;
@@ -659,9 +658,9 @@ html {
         margin: 0 auto;
     }
 
-    .bottom {
+    /* .bottom {
         margin-bottom: 0;
-    }
+    } */
 
     .video-portfolio {
         padding-top: 50px;
