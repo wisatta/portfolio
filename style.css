@@ -703,8 +703,12 @@ html {
         width: 420px;
     }
 
+    .btn-order {
+        margin-left: 100px;
+    }
+
     .contacts-top {
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
     .contacts-container {
