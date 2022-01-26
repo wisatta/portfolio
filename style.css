@@ -669,26 +669,14 @@ html {
         margin-bottom: 20px;
     }
 
-    /* .bottom {
-        margin-bottom: 0;
-    } */
-
     .video-portfolio {
-        padding-top: 50px;
+        padding-top: 65px;
     }
-
-    /* #video-portfolio {
-        display: none;
-    } */
 
     #video-portfolio {
         width: 100%;
-        height: auto;
+        height: 418px;
     }
-
-    /* #video-tablet {
-        display: block;
-    }      */
 
     .hover {
         width: 75px;
@@ -706,7 +694,7 @@ html {
         padding-top: 50px;
         flex-direction: column;
         width: 420px; 
-        height: 1615px;
+        height: 1690px;
         margin: 0 auto; 
         justify-content: space-between;
     }
