@@ -707,6 +707,10 @@ html {
         margin-left: 100px;
     }
 
+    #message {
+        margin-bottom: 20px;
+    }
+
     .contacts-top {
         margin-top: 60px;
     }
