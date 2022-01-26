@@ -111,6 +111,9 @@ html {
 .text {
     padding-top: 10px;
     padding-bottom: 25px;
+    width: 470px;
+    height: 120px;
+    margin-bottom: 25px;
 }
 
 .btn0 {
@@ -502,7 +505,7 @@ html {
 
 @media (max-width: 768px) {
 
-    .container, .hero-container, .header-container, .contacts {
+    .container, .hero-container, .header-container, .contacts, .video-container {
         width: 768px;
     }
 
@@ -594,11 +597,18 @@ html {
     font-weight: 400;
   } 
 
-  .text  {
-      padding-top: 20px;
-      padding-bottom: 60px;
-      line-height: normal;
+  .text {
+    line-height: 24px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+    width: 390px;
+    height: 72px;
   }
+
+  .section-title {
+    padding: 12px 0;
+}
+
     .title {
     width: 364px;
     }
