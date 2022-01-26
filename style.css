@@ -508,6 +508,10 @@ html {
         width: 768px;
     }
 
+    .skills-container, .portfolio-container, .video .price-container  {
+        padding-top: 90px;
+    }
+
     .header-container {
         background: url("assets/img/bg-tablet.jpg");
         padding: 0 60px;
@@ -603,10 +607,6 @@ html {
     height: 72px;
   }
 
-  .section-title {
-    padding: 12px 0;
-}
-
     .title {
     width: 364px;
     }
@@ -627,8 +627,8 @@ html {
     display: flex;
     /* width: 728px; */
     width: 644px;
-    height: 520px;
-    padding-top: 36px;
+    height: 565px;
+    padding-top: 50px;
     margin: 0 auto;
     }
 
