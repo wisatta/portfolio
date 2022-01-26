@@ -627,8 +627,7 @@ html {
     display: flex;
     /* width: 728px; */
     width: 644px;
-    height: 565px;
-    padding-top: 50px;
+    height: 575px;
     margin: 0 auto;
     }
 
@@ -678,13 +677,18 @@ html {
         padding-top: 50px;
     }
 
-    #video-portfolio {
+    /* #video-portfolio {
         display: none;
+    } */
+
+    #video-portfolio {
+        width: 100%;
+        height: auto;
     }
 
-    #video-tablet {
+    /* #video-tablet {
         display: block;
-    }     
+    }      */
 
     .hover {
         width: 75px;
