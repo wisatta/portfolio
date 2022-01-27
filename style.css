@@ -262,11 +262,7 @@ html {
 .bottom {
     margin-bottom: 25px;
 }
-
-#video-tablet {
-      display: none;  
-}     
-
+   
 .video-portfolio {
     padding-top: 60px;
     position: relative;
@@ -369,7 +365,6 @@ html {
     /* width: auto; */
     height: 700px;
     padding-top: 30px;
-    /* padding-left: 970px; */
     display: flex;
     justify-content: flex-end;
     padding-right: 20px;
@@ -616,9 +611,6 @@ html {
     line-height: normal;
     }
 
-    /* .skills-container, .portfolio-container, .video-container, .price-container {
-        padding-top: 80px;
-    } */
     .skills-container {
         padding-bottom: 13px;
     }
@@ -734,6 +726,10 @@ html {
 
     .form-btn {
         padding-left: 112px;
+    }
+
+    .input, #message {
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .footer-items {
