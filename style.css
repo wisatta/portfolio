@@ -70,13 +70,45 @@ html {
     transition: all 0.5s ease;
 }
 
-.en {
+.active {
     color: #BDAE82 ;
     font-weight: 700;
 }
 
-.en:hover {
+.lang:hover {
     cursor: pointer;
+    color: #BDAE82 ;
+}
+
+.theme-switch {
+    transition: all 0.5s ease;
+}
+
+.icon {
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding-left: 20px;
+}
+
+.moon {
+    display: none;
+}
+
+.light-theme .moon {
+    display: flex;
+}
+
+.light-theme .sun {
+    display: none;
+}
+
+.light-theme {
+    background-color: #fff;
+    color: #000;
+}
+
+.light-theme:hover {
+    color: #000;
 }
 
 .header-container {
@@ -125,12 +157,12 @@ html {
     transition: all 0.5s ease;
 }
 
-.btn0:hover, .btn1:hover, .order:hover, .btn-message:hover, .btn-message:hover  {
+.btn0:hover, .portfolio-btn:hover, .order:hover, .btn-message:hover {
     color:white;
     cursor: pointer;
 }
 
-.btn1:hover {
+.portfolio-btn:hover {
     border-color: #BDAE82;
 }
 
@@ -151,6 +183,15 @@ html {
 .title-bg {
     background: #000;
     padding: 0 20px;
+}
+
+.light-theme .title {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.light-theme .title-bg {
+    background: #fff;
 }
 
 .skills-container, .portfolio-container, .video .price-container  {
@@ -216,7 +257,7 @@ html {
     background-size: 32px 50px;
 }
 
-.btns {
+.portfolio-buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -224,27 +265,36 @@ html {
     padding-top: 60px;
 }
 
-.btn1 {
+.portfolio-btn {
     width: 220px;
     height: 55px;
-    border: solid 2px;
-    background-color: transparent;
-    cursor: pointer;
     font-family: inherit;
     font-size: 20px;
-    color: #BDAE82;
     margin-right: 5px;
+    color: #BDAE82;
+    border: 2px solid #bdae82;    
+    background-color: transparent;
+    cursor: pointer;
     transition: all 0.5s ease;
 }
 
-.btn2 {
-    width: 220px;
-    height: 55px;
-    border: 0;
-    background-color: #bdae82;
+.light-theme .portfolio-btn {
+    color: #000;
+}
+
+.light-theme .portfolio-btn:hover {
     cursor: pointer;
-    font-family: inherit;
-    font-size: 20px;
+    color: #fff;
+    background-color: #bdae82;
+}
+
+.portfolio-active {
+    background-color: #bdae82;
+    color: #000;
+}
+
+.light-theme .portfolio-active{
+    color: #fff;
 }
 
 .portfolio-photos {
@@ -276,9 +326,9 @@ html {
     height: 705px;
 }
 
-.video-container {
+/* .video-container {
     margin-bottom: 100px;
-}
+} */
 
 .play-hover {
     position: absolute;
@@ -300,11 +350,21 @@ html {
     margin: 0 auto;
 }
 
+.price-container {
+    padding-top: 100px;
+    padding-bottom: 160px;
+}
+
 .price-item {
     width: 450px;
     height: 505px;
     border: 3px solid #BDAE82;
     border-radius: 0px;
+    transition: all 0.5s ease;
+}
+
+.price-item:hover, .portfolio-btn:hover, .play-hover:hover {
+	transform: translatey(-0.65em);
 }
 
 .tariff-title {
@@ -353,9 +413,9 @@ html {
     transition: all 0.5s ease;
 }
 
-.contacts-top {
+/* .contacts-top {
     margin-top: 160px;
-}
+} */
 
 .contacts {
     background-image: url("assets/img/contact.jpg");
@@ -455,7 +515,7 @@ html {
     width: 188px;
 }
 
-.logo:hover , .nav-link:hover , .ru:hover, .inst:hover, .fb:hover,  .tw:hover, .pin:hover, .play-hover:hover {
+.logo:hover , .nav-link:hover , .ru:hover, .inst:hover, .fb:hover,  .tw:hover, .pin:hover, .play-hover:hover, .theme-switch:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
       contrast(87%);
       cursor: pointer;
@@ -574,6 +634,18 @@ html {
     transform: translate(0px, 0px);
     }
 
+    .navBurger {
+        background: #fff;
+    }
+    
+    .itemBurger {
+        color: #000;
+    }
+
+    .close {
+        background: #000;
+    }
+
     .nav-list {
         display: flex;
         flex-direction: column;
@@ -639,7 +711,7 @@ html {
     padding-bottom: 0px;
     }
 
-    .btns {
+    .portfolio-buttons {
         padding-top: 50px;
         height: 225px;
         width: 445px;
@@ -795,14 +867,14 @@ html {
         height: auto;
     }
 
-    .btns {
+    .portfolio-buttons {
         width: auto;
         height: auto;
         justify-content: center;
         align-items: center;
     }
 
-    .btn1 {
+    .portfolio-btn {
         margin-bottom: 5px;
     }
 
@@ -897,4 +969,15 @@ html {
     .portfolio-photo {
         width: 100%;
     }
-}   
+} 
+
+/* Animation */
+
+.btn0:hover, .btn0:focus, .btn-message:hover, .btn-message:focus{
+	box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+	animation: pulse 1s;
+}
+@keyframes pulse {
+	0%{box-shadow: 0 0 0 0 #bdae82}
+}
+.pulse{color:#bdae82; border-color:#bdae82;}
